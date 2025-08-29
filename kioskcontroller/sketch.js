@@ -58,7 +58,7 @@ if(uiButton("Connect").clicked) {
   if (connected) {
     input.size(width - 100, 40);
     if (uiButton("Send").clicked) {
-    //  print(input.value());
+      print(input.value());
       conn.send({
         url: input.value(),
       });
