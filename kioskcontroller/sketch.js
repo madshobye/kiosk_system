@@ -58,14 +58,15 @@ if(uiButton("Connect").clicked) {
   if (connected) {
     input.size(width - 100, 40);
     if (uiButton("Send").clicked) {
+    //  print(input.value());
       conn.send({
-        url: "https://editor.p5js.org/hobye/full/T0Sa3gqqo",
+        url: input.value(),
       });
     }
    
     if(urls !=null)
     {
-      print(urls.urls);
+      
   for (const key in urls.urls) {
     if ( uiButton(key.replace("https://editor.p5js.org/", "P5: ") ).clicked ) {
      conn.send({
@@ -122,16 +123,20 @@ function peerConnect(id) {
     if(data.hasOwnProperty("urls"))
        {
           urls = data;
-         print(urls);
+  
   
         }}
   );
   conn.on("open", function () {
     print("connected");
-
+  conn.send({
+        getUrls: true,
+      });
     connected = true;
     input.show();
   });
+  
+
 }
 
 function keyReleased() {
