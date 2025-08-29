@@ -70,7 +70,7 @@ if(uiButton("Connect").clicked) {
   for (const key in urls.urls) {
     if ( uiButton(key.replace("https://editor.p5js.org/", "P5: ") ).clicked ) {
      conn.send({
-        url: "https://editor.p5js.org/hobye/full/T0Sa3gqqo",
+        url: key,
       });
     }
   }
