@@ -42,7 +42,7 @@ function draw() {
   background(200);
   uiUpdateSimple();
   uiContainerStart(50, 100, width - 100);
-  if (getUrlParam("id") !=null && !connected && uiButton("Connect").clicked) {
+  if (getUrlParam("id") !=null && !connected && uiButton("Connect x").clicked) {
     peerConnect(getUrlParam("id"));
   }
   /*
