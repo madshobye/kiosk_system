@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+body
+{
+
+  background:black;
+
+}
+canvas {
+  display: block;
+}
+
+.fullP5 {
+      position: absolute;
+      top: -45px;   /* push 20px above the window */
+      left: 0;
+      width: 100%;
+      height: calc(100% + 45px); /* extend height to cover window despite offset */
+      background: lightblue;
+    }
+
+.full {
+      position: absolute;
+      top: 0px;   /* push 20px above the window */
+      left: 0;
+      width: 100%;
+      height: calc(100% ); /* extend height to cover window despite offset */
+      background: lightblue;
+    }
+
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
