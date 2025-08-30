@@ -95,7 +95,7 @@ function setup() {
   textFont("Droid Sans");
   qrcodegenSetup();
   qrCode = qrcodegen.QrCode.encodeText(
-    "https://madshobye.github.io/kioskcontroller_1/kioskcontroller/index.html?id=" +
+    "https://madshobye.github.io/kiosk_system/controller/index.html?id=" +
       peerID,
     qrcodegen.QrCode.Ecc.MEDIUM
   );
