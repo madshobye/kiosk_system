@@ -11,7 +11,7 @@ let urls = null;
 
 function setup() {
   noStroke();
-  noScrolling();
+ // noScrolling();
   createCanvas(windowWidth, windowHeight);
   loadGoogleFont("Droid Sans");
   textFont("Droid Sans");
